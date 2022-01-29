@@ -1,30 +1,32 @@
-using System;
 using UnityEngine;
 
 public class Player1 : MonoBehaviour
 {
-    public float moveSpeed = 1;
+    public float moveSpeed = 30;
     public float jumpHeight = 2;
-    public double JumpWait = 0;
+    private double _jumpWait;
     public int jumps = 2;
-    private float maxSpeed = 10;
-    private bool touchingwall = false;
-    private float dashDistance = 10;
-    Rigidbody2D rb;
-    CapsuleCollider2D cc;
+    private const float MaxSpeed = 10;
+    private bool _touchingWall;
+    private const float Dash = 20;
+    private float dashes = 1;
+    private double _dashDuration;
+    private double _dashCooldown;
+    float _oldX;
+    Rigidbody2D _rb;
 
     void Start() {
-        rb = GetComponent<Rigidbody2D>();
-        cc = GetComponent<CapsuleCollider2D>();
+        _rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Platform"))
+        if (col.gameObject.CompareTag("Platform") || col.gameObject.CompareTag("Player2"))
         {
             if (col.GetContact(0).point.y < transform.position.y - 0.25)
             {
                 jumps = 2;
+                dashes = 1;
             }
         }
     }
@@ -34,24 +36,22 @@ public class Player1 : MonoBehaviour
         if (col.gameObject.CompareTag("Platform"))
         {
             
-            if (col.GetContact(0).point.x <= transform.position.x - 0.25)
+            if (col.GetContact(0).point.x <= transform.position.x - 0.2)
             {
-                rb.gravityScale = 0;
-                touchingwall = true;
+                _rb.gravityScale = 0;
+                _touchingWall = true;
                 if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) )
                 {
-                    rb.AddForce(new Vector2(200, 200), ForceMode2D.Force);
-                    jumps += 1;
+                    _rb.AddForce(new Vector2(200, 200), ForceMode2D.Force);
                 }
             }
-            if (col.GetContact(0).point.x >= transform.position.x + 0.25)
+            if (col.GetContact(0).point.x >= transform.position.x + 0.2)
             {
-                rb.gravityScale = 0;
-                touchingwall = true;
+                _rb.gravityScale = 0;
+                _touchingWall = true;
                 if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) )
                 {
-                    rb.AddForce(new Vector2(-200, 200), ForceMode2D.Force);
-                    jumps += 1;
+                    _rb.AddForce(new Vector2(-200, 200), ForceMode2D.Force);
                 }
             }
         }
@@ -61,20 +61,56 @@ public class Player1 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Platform"))
         {
-            rb.gravityScale = 1;
-            touchingwall = false;
+            _rb.gravityScale = 1;
+            _touchingWall = false;
         }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (_rb.velocity.x > 20)
         {
-            rb.AddForce(new Vector2(500, 0));        }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            rb.AddForce(new Vector2(-500, 0));
+            _rb.velocity = new Vector2(20, _rb.velocity.y);
         }
+        if (_rb.velocity.x < -20)
+        {
+            _rb.velocity = new Vector2(-20, _rb.velocity.y);
+        }
+        
+
+        if (Input.GetKeyDown(KeyCode.E) && _dashDuration <= 0 && dashes > 0)
+        {
+            _rb.gravityScale = 0;
+            var velocity = _rb.velocity;
+            _oldX = velocity.x;
+            velocity = new Vector2(Dash, velocity.y);
+            _rb.velocity = velocity;
+            _dashDuration = 0.2;
+            dashes -= 1;
+
+        }
+        if (Input.GetKeyDown(KeyCode.Q)&& _dashDuration <= 0 && dashes > 0)
+        {
+            _rb.gravityScale = 0;
+            var velocity = _rb.velocity;
+            _oldX = velocity.x;
+            velocity = new Vector2(-Dash, 0);
+            _rb.velocity = velocity;
+            _dashDuration = 0.2;
+            dashes -= 1;
+        }
+        
+        if (_dashDuration > 0)
+        {
+            _dashDuration -= Time.deltaTime;
+            if (_dashDuration <= 0)
+            {
+                _rb.gravityScale = 1;
+                _rb.velocity = new Vector2(_oldX, 0);      
+            }
+            
+        }
+        
     }
 
 
@@ -82,27 +118,27 @@ public class Player1 : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-            if (rb.velocity.x < maxSpeed)
+            if (_rb.velocity.x < MaxSpeed)
             {
-                rb.AddForce(new Vector2(moveSpeed, 0), ForceMode2D.Force);
+                _rb.AddForce(new Vector2(moveSpeed, 0), ForceMode2D.Force);
             }
         }
         if (Input.GetKey(KeyCode.A))
         {
-            if (rb.velocity.x > -maxSpeed)
+            if (_rb.velocity.x > -MaxSpeed)
             {
-                rb.AddForce(new Vector2(-moveSpeed, 0), ForceMode2D.Force);
+                _rb.AddForce(new Vector2(-moveSpeed, 0), ForceMode2D.Force);
             }
 
         }
 
-        if ( (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space) ) && jumps > 0 && JumpWait <= 0 && !touchingwall)
+        if ( (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space) ) && jumps > 0 && _jumpWait <= 0 && !_touchingWall)
         {
-            rb.AddForce(new Vector2(0, jumpHeight), ForceMode2D.Impulse);
+            _rb.AddForce(new Vector2(0, jumpHeight), ForceMode2D.Impulse);
             jumps -= 1;
-            JumpWait = 0.5;
+            _jumpWait = 0.3;
         }
 
-        JumpWait -= 1 * Time.deltaTime;
+        _jumpWait -= 1 * Time.deltaTime;
     }
 }
