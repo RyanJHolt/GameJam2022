@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 324050876}
   - component: {fileID: 324050875}
   - component: {fileID: 324050877}
+  - component: {fileID: 324050878}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -371,6 +372,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!114 &324050878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324050873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e044d485c63c934192d8780c63b9a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpHeight: 20
+  jumps: 2
+  jumpWait: 0
 --- !u!1 &470283041
 GameObject:
   m_ObjectHideFlags: 0
