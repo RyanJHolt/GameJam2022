@@ -44,7 +44,7 @@ public class Player1 : MonoBehaviour
                 {
                     _rb.AddForce(new Vector2(200, 200), ForceMode2D.Force);
                 }
-                // jumps = 2;
+                jumps = 2;
             }
             if (col.GetContact(0).point.x >= transform.position.x + 0.2)
             {
@@ -54,7 +54,7 @@ public class Player1 : MonoBehaviour
                 {
                     _rb.AddForce(new Vector2(-200, 200), ForceMode2D.Force);
                 }
-                // jumps =1;
+                jumps =2;
             }
         }
     }
