@@ -5,6 +5,7 @@ using UnityEngine;
 public class Transport : MonoBehaviour
 {
     public GameObject nextPortal;
+    public bool lastPortal = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,9 @@ public class Transport : MonoBehaviour
                 other.transform.position = new Vector2(nextPortal.transform.position.x, nextPortal.transform.position.y);
             } else {
                 //end of level
+            }
+            if(lastPortal){
+                other.gameObject.transform.position = new Vector3(-13.5900002f,1.27999997f,0);
             }
         }
     }

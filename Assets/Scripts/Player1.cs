@@ -44,6 +44,7 @@ public class Player1 : MonoBehaviour
                 {
                     _rb.AddForce(new Vector2(200, 200), ForceMode2D.Force);
                 }
+                // jumps = 2;
             }
             if (col.GetContact(0).point.x >= transform.position.x + 0.2)
             {
@@ -53,6 +54,7 @@ public class Player1 : MonoBehaviour
                 {
                     _rb.AddForce(new Vector2(-200, 200), ForceMode2D.Force);
                 }
+                // jumps =1;
             }
         }
     }
@@ -116,6 +118,7 @@ public class Player1 : MonoBehaviour
 
     void FixedUpdate()
     {
+        print(_touchingWall);
         if (Input.GetKey(KeyCode.D))
         {
             if (_rb.velocity.x < MaxSpeed)
