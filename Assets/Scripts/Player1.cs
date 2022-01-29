@@ -118,7 +118,6 @@ public class Player1 : MonoBehaviour
 
     void FixedUpdate()
     {
-        print(_touchingWall);
         if (Input.GetKey(KeyCode.D))
         {
             if (_rb.velocity.x < MaxSpeed)
