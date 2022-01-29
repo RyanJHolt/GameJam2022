@@ -23,7 +23,7 @@ public class Player1 : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Platform") || col.gameObject.CompareTag("Player2"))
         {
-            if (col.GetContact(0).point.y < transform.position.y - 0.25)
+            if (col.GetContact(0).point.y < transform.position.y - 0.2)
             {
                 jumps = 2;
                 dashes = 1;
