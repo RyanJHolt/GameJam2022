@@ -26,7 +26,6 @@ ExportedObj/
 *.VC.db
 *.logs
 *.log
-*.meta
 
 
 # Unity3D generated meta files
