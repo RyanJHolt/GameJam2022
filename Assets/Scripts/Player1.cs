@@ -43,7 +43,7 @@ public class Player1 : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Platform"))
+        if (col.gameObject.CompareTag("Platform")|| col.gameObject.CompareTag("Player2"))
         {
             
             if (col.GetContact(0).point.x <= transform.position.x - 0.2)
@@ -52,7 +52,7 @@ public class Player1 : MonoBehaviour
                 _touchingWall = true;
                 if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) )
                 {
-                    _rb.AddForce(new Vector2(200, 200), ForceMode2D.Force);
+                    _rb.AddForce(new Vector2(50, 40), ForceMode2D.Force);
                 }
                 jumps = 2;
             }
@@ -60,9 +60,9 @@ public class Player1 : MonoBehaviour
             {
                 _rb.gravityScale = 0;
                 _touchingWall = true;
-                if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) )
+                if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W))
                 {
-                    _rb.AddForce(new Vector2(-200, 200), ForceMode2D.Force);
+                    _rb.AddForce(new Vector2(-50, 50), ForceMode2D.Force);
                 }
                 jumps =2;
             }

@@ -2637,7 +2637,7 @@ GameObject:
   - component: {fileID: 1945139466574806570}
   - component: {fileID: 1945139466574806571}
   - component: {fileID: 1945139466574806568}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Blue Platform (6)
   m_TagString: Player1
   m_Icon: {fileID: 0}
