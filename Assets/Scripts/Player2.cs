@@ -41,7 +41,7 @@ public class Player2 : MonoBehaviour
             {
                 _rb.gravityScale = 0;
                 _touchingWall = true;
-                if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) )
+                if (Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.K) )
                 {
                     _rb.AddForce(new Vector2(200, -200), ForceMode2D.Force);
                 }
@@ -50,7 +50,7 @@ public class Player2 : MonoBehaviour
             {
                 _rb.gravityScale = 0;
                 _touchingWall = true;
-                if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) )
+                if (Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.K) )
                 {
                     _rb.AddForce(new Vector2(-200, -200), ForceMode2D.Force);
                 }
