@@ -17,11 +17,13 @@ public class Player2 : MonoBehaviour
     float _oldX;
     Rigidbody2D _rb;
 
+    GameObject lvl;
     void Start() {
         _rb = GetComponent<Rigidbody2D>();
         _rb.gravityScale = -1;
         x = _rb.position.x;
         y = _rb.position.y;
+        lvl = GameObject.FindGameObjectWithTag("MainLevel");
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -36,7 +38,8 @@ public class Player2 : MonoBehaviour
         }
         if (col.gameObject.CompareTag("Level"))
         {
-            _rb.position = new Vector2(x, y);
+            // _rb.position = new Vector2(x, y);
+            lvl.GetComponent<ResetBoth>().resetPlayers();
         }
 
         if (col.gameObject.CompareTag("Player1"))

@@ -688,7 +688,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6320992430721696612, guid: b533ccc0d42a3e34391ffb507a51c73c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6320992430721696612, guid: b533ccc0d42a3e34391ffb507a51c73c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -893,11 +893,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4560160746849705419, guid: 16c5d1bf24f9fd94f836a51a26d51e4e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.7
+      value: -7.8
       objectReference: {fileID: 0}
     - target: {fileID: 4560160746849705419, guid: 16c5d1bf24f9fd94f836a51a26d51e4e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 0.83
       objectReference: {fileID: 0}
     - target: {fileID: 8507023233633787281, guid: 16c5d1bf24f9fd94f836a51a26d51e4e, type: 3}
       propertyPath: m_Name
@@ -1389,7 +1389,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Time for switch
+  m_text: Time for a switch
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7faeb00adf2c1a40947f91ef2b547e0, type: 2}
   m_sharedMaterial: {fileID: 2210326345260452284, guid: f7faeb00adf2c1a40947f91ef2b547e0, type: 2}
@@ -1452,7 +1452,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -28.371284, w: 0}
+  m_margin: {x: 0, y: 0, z: -53.78266, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1636,11 +1636,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4560160746849705419, guid: 16c5d1bf24f9fd94f836a51a26d51e4e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.58
+      value: -7.86
       objectReference: {fileID: 0}
     - target: {fileID: 4560160746849705419, guid: 16c5d1bf24f9fd94f836a51a26d51e4e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.91
+      value: -5.67
       objectReference: {fileID: 0}
     - target: {fileID: 8507023233633787281, guid: 16c5d1bf24f9fd94f836a51a26d51e4e, type: 3}
       propertyPath: m_Name
@@ -2215,7 +2215,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I heard it fun
+  m_text: I heard its fun
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7faeb00adf2c1a40947f91ef2b547e0, type: 2}
   m_sharedMaterial: {fileID: 2210326345260452284, guid: f7faeb00adf2c1a40947f91ef2b547e0, type: 2}
@@ -2473,7 +2473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8033769114584361303, guid: 037e194b03ad3cb44859c33fbb3fd262, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 8033769114584361303, guid: 037e194b03ad3cb44859c33fbb3fd262, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3790,7 +3790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2239314046783171213, guid: abaf7608a094600478d4669fcd606a27, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2239314046783171213, guid: abaf7608a094600478d4669fcd606a27, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3973,14 +3973,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 572502695823205560, guid: f814371524d3e5c41a2bf135b0413c8d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 58.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1971199586394060128, guid: f814371524d3e5c41a2bf135b0413c8d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -19.2
-      objectReference: {fileID: 0}
     - target: {fileID: 3777858098294255472, guid: f814371524d3e5c41a2bf135b0413c8d, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4025,17 +4017,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3782593353779548756, guid: f814371524d3e5c41a2bf135b0413c8d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.1
-      objectReference: {fileID: 0}
     - target: {fileID: 7433309511559421949, guid: f814371524d3e5c41a2bf135b0413c8d, type: 3}
       propertyPath: m_Name
       value: Level
-      objectReference: {fileID: 0}
-    - target: {fileID: 7754858222321554827, guid: f814371524d3e5c41a2bf135b0413c8d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 18.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f814371524d3e5c41a2bf135b0413c8d, type: 3}

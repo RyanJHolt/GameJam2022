@@ -10,6 +10,7 @@ TagManager:
   - Level
   - Blue
   - Yellow
+  - MainLevel
   layers:
   - Default
   - TransparentFX
