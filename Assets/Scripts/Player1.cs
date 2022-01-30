@@ -61,7 +61,7 @@ public class Player1 : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Platform"))
+        if (other.gameObject.CompareTag("Platform") || other.gameObject.CompareTag("Player2"))
         {
             _rb.gravityScale = 1;
             _touchingWall = false;
@@ -85,9 +85,9 @@ public class Player1 : MonoBehaviour
             _rb.gravityScale = 0;
             var velocity = _rb.velocity;
             _oldX = velocity.x;
-            velocity = new Vector2(Dash, velocity.y);
+            velocity = new Vector2(Dash, 0);
             _rb.velocity = velocity;
-            _dashDuration = 0.2;
+            _dashDuration = 0.5;
             dashes -= 1;
 
         }
@@ -98,7 +98,7 @@ public class Player1 : MonoBehaviour
             _oldX = velocity.x;
             velocity = new Vector2(-Dash, 0);
             _rb.velocity = velocity;
-            _dashDuration = 0.2;
+            _dashDuration = 0.5;
             dashes -= 1;
         }
         
