@@ -13,6 +13,7 @@ public class CameraMovement : MonoBehaviour
         var position1 = player1.transform.position;
         var position2 = player2.transform.position;
         var transform1 = transform;
-        transform1.position = new Vector3((position1.x + position2.x)/2,(position1.y + position2.y)/2, transform1.position.z);
+        transform1.position = new Vector3((position1.x + position2.x)/2,(position1.y + position2.y)/2,transform.position.z);
+
     }
 }

@@ -33,7 +33,7 @@ public class ParticleController : MonoBehaviour
     private void OnCollisionStay2D(Collision2D other)
     {
         Debug.Log("Collision");
-        if (other.gameObject.CompareTag("Platform"))
+        if (other.gameObject.CompareTag("Platform") ||other.gameObject.CompareTag("Player1") || other.gameObject.CompareTag("Player2"))
         {
             //get particle system
             if (timer < 0f)
