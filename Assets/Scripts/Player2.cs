@@ -26,7 +26,7 @@ public class Player2 : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Platform") || col.gameObject.CompareTag("Blue"))
+        if (col.gameObject.CompareTag("Platform") || col.gameObject.CompareTag("Yellow"))
         {
             if (col.GetContact(0).point.y > transform.position.y + 0.2)
             {
@@ -50,7 +50,7 @@ public class Player2 : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Platform") || col.gameObject.CompareTag("Blue"))
+        if (col.gameObject.CompareTag("Platform") || col.gameObject.CompareTag("Yellow"))
         {
             
             if (col.GetContact(0).point.x <= transform.position.x - 0.2)
@@ -78,7 +78,7 @@ public class Player2 : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Platform") || other.gameObject.CompareTag("Blue"))
+        if (other.gameObject.CompareTag("Platform") || other.gameObject.CompareTag("Yellow"))
         {
             _rb.gravityScale = -1;
             _touchingWall = false;

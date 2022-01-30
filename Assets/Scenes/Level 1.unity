@@ -322,7 +322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8033769114584361303, guid: 037e194b03ad3cb44859c33fbb3fd262, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.89
+      value: -17.89
       objectReference: {fileID: 0}
     - target: {fileID: 8033769114584361303, guid: 037e194b03ad3cb44859c33fbb3fd262, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1247,7 +1247,7 @@ GameObject:
   - component: {fileID: 1945139464531489855}
   m_Layer: 6
   m_Name: Blue Platform (9)
-  m_TagString: Player2
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1292,7 +1292,7 @@ GameObject:
   - component: {fileID: 1945139464735404769}
   m_Layer: 6
   m_Name: Blue Platform (2)
-  m_TagString: Player2
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1535,7 +1535,7 @@ GameObject:
   - component: {fileID: 1945139464895464662}
   m_Layer: 6
   m_Name: Blue Platform (1)
-  m_TagString: Player2
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1640,7 +1640,7 @@ GameObject:
   - component: {fileID: 1945139465020796359}
   m_Layer: 6
   m_Name: Blue Platform (7)
-  m_TagString: Player2
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1757,7 +1757,7 @@ GameObject:
   - component: {fileID: 1945139465180178075}
   m_Layer: 6
   m_Name: Blue Platform (5)
-  m_TagString: Player2
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1816,7 +1816,7 @@ GameObject:
   - component: {fileID: 1945139465342527849}
   m_Layer: 6
   m_Name: Blue Platform (8)
-  m_TagString: Player2
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1973,7 +1973,7 @@ GameObject:
   - component: {fileID: 1945139465715845680}
   m_Layer: 6
   m_Name: Blue Platform (4)
-  m_TagString: Player2
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2078,7 +2078,7 @@ GameObject:
   - component: {fileID: 1945139465775086129}
   m_Layer: 6
   m_Name: Blue Platform (12)
-  m_TagString: Player2
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2321,7 +2321,7 @@ GameObject:
   - component: {fileID: 1945139465812054814}
   m_Layer: 6
   m_Name: Blue Platform
-  m_TagString: Player2
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2366,7 +2366,7 @@ GameObject:
   - component: {fileID: 1945139465917201032}
   m_Layer: 6
   m_Name: Blue Platform (3)
-  m_TagString: Player2
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2497,7 +2497,7 @@ GameObject:
   - component: {fileID: 1945139466113813608}
   m_Layer: 6
   m_Name: Blue Platform (10)
-  m_TagString: Player2
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2642,7 +2642,7 @@ GameObject:
   - component: {fileID: 1945139466288621884}
   m_Layer: 6
   m_Name: Blue Platform (11)
-  m_TagString: Player2
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2759,7 +2759,7 @@ GameObject:
   - component: {fileID: 1945139466574806568}
   m_Layer: 3
   m_Name: Blue Platform (6)
-  m_TagString: Player1
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2978,7 +2978,7 @@ GameObject:
   - component: {fileID: 7185870939712843699}
   m_Layer: 3
   m_Name: Yellow Platform (4)
-  m_TagString: Player1
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3221,7 +3221,7 @@ GameObject:
   - component: {fileID: 7185870939728601493}
   m_Layer: 3
   m_Name: Yellow Platform (7)
-  m_TagString: Player1
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3352,7 +3352,7 @@ GameObject:
   - component: {fileID: 7185870939819247972}
   m_Layer: 3
   m_Name: Yellow Platform (10)
-  m_TagString: Player1
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3418,7 +3418,7 @@ GameObject:
   - component: {fileID: 7185870940102488625}
   m_Layer: 3
   m_Name: Yellow Platform (3)
-  m_TagString: Player1
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3502,7 +3502,7 @@ GameObject:
   - component: {fileID: 7185870940191180499}
   m_Layer: 3
   m_Name: Yellow Platform (8)
-  m_TagString: Player1
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3698,7 +3698,7 @@ GameObject:
   - component: {fileID: 7185870940695963455}
   m_Layer: 3
   m_Name: Yellow Platform (6)
-  m_TagString: Player1
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3811,7 +3811,7 @@ GameObject:
   - component: {fileID: 7185870940806829633}
   m_Layer: 3
   m_Name: Yellow Platform (9)
-  m_TagString: Player1
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3895,7 +3895,7 @@ GameObject:
   - component: {fileID: 7185870940910275946}
   m_Layer: 3
   m_Name: Yellow Platform (2)
-  m_TagString: Player1
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4138,7 +4138,7 @@ GameObject:
   - component: {fileID: 7185870941025192421}
   m_Layer: 3
   m_Name: Yellow Platform
-  m_TagString: Player1
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4204,7 +4204,7 @@ GameObject:
   - component: {fileID: 7185870941181710761}
   m_Layer: 3
   m_Name: Yellow Platform (5)
-  m_TagString: Player1
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4400,7 +4400,7 @@ GameObject:
   - component: {fileID: 7185870941338625324}
   m_Layer: 3
   m_Name: Yellow Platform (1)
-  m_TagString: Player1
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
