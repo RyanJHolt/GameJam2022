@@ -8,6 +8,8 @@ TagManager:
   - Player1
   - Player2
   - Level
+  - Blue
+  - Yellow
   layers:
   - Default
   - TransparentFX
