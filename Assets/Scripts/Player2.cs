@@ -4,6 +4,8 @@ public class Player2 : MonoBehaviour
 {
     public float moveSpeed = 30;
     public float jumpHeight = 2;
+    public float x;
+    public float y;
     private double _jumpWait;
     public int jumps = 2;
     private const float MaxSpeed = 10;
@@ -18,6 +20,8 @@ public class Player2 : MonoBehaviour
     void Start() {
         _rb = GetComponent<Rigidbody2D>();
         _rb.gravityScale = -1;
+        x = _rb.position.x;
+        y = _rb.position.y;
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -29,6 +33,10 @@ public class Player2 : MonoBehaviour
                 jumps = 2;
                 dashes = 1; 
             }
+        }
+        if (col.gameObject.CompareTag("Level"))
+        {
+            _rb.position = new Vector2(x, y);
         }
     }
 
@@ -65,6 +73,11 @@ public class Player2 : MonoBehaviour
             _rb.gravityScale = -1;
             _touchingWall = false;
         }
+        if (other.gameObject.CompareTag("Level"))
+        {
+            _rb.position = new Vector2(x, y);
+        }
+        
     }
 
     void Update()

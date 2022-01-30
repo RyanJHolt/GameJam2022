@@ -1,7 +1,10 @@
+using System;
 using UnityEngine;
 
 public class Player1 : MonoBehaviour
 {
+    public float x;
+    public float y;
     public float moveSpeed = 30;
     public float jumpHeight = 2;
     private double _jumpWait;
@@ -17,6 +20,8 @@ public class Player1 : MonoBehaviour
 
     void Start() {
         _rb = GetComponent<Rigidbody2D>();
+        x = _rb.position.x;
+        y = _rb.position.y;
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -28,6 +33,11 @@ public class Player1 : MonoBehaviour
                 jumps = 2;
                 dashes = 1;
             }
+        }
+
+        if (col.gameObject.CompareTag("Level"))
+        {
+            _rb.position = new Vector2(x, y);
         }
     }
 

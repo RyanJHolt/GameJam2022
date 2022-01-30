@@ -634,7 +634,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1300379315}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1300379315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -864,10 +876,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Player 1 uses A W D to move and can use Space to jump
+  m_text: 'Player 1 uses A D to move and can use Space or W to jump
 
-    Player 2 uses
-    J K L to move and can use Right Shift to jump'
+    Player 2
+    uses J L to move and can use Right Shift or K to jump'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7faeb00adf2c1a40947f91ef2b547e0, type: 2}
   m_sharedMaterial: {fileID: 2210326345260452284, guid: f7faeb00adf2c1a40947f91ef2b547e0, type: 2}
@@ -894,8 +906,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7.9
-  m_fontSizeBase: 7.9
+  m_fontSize: 7.5
+  m_fontSizeBase: 7.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
