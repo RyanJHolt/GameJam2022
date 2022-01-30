@@ -38,5 +38,4 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-*.meta
 UserSettings/EditorUserSettings.asset
